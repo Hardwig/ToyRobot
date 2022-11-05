@@ -15,7 +15,7 @@ namespace ToyRobotMain.Core
             var postionY = int.Parse(initialize[1]);
             var direction = initialize[2];
 
-            if (validateRobot(postionX, postionY, direction))
+            if (ValidateRobot(postionX, postionY, direction))
             {
                 robot.RobotXPostion = postionX;
                 robot.RobotYPosition = postionY;
@@ -28,7 +28,7 @@ namespace ToyRobotMain.Core
         }
 
 
-        private static bool validateRobot(int positionX, int postionY, string direction) {
+        public static bool ValidateRobot(int positionX, int postionY, string direction) {
 
             var isValid = true;
             var directions = new List<string>{ "north", "east", "south", "west"};

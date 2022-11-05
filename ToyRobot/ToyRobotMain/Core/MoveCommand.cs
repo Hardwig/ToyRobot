@@ -6,26 +6,42 @@ namespace ToyRobotMain.Core
 
         public static void MoveRobot(RobotModel robot) {
 
+            var xPostion = robot.RobotXPostion;
+            var yPostion = robot.RobotYPosition;
+
+
 
             switch (robot.RobotDirection)
             {
 
                 case "north":
-                    robot.RobotYPosition++;
+                    yPostion++;
                     break;
                 case "east":
-                    robot.RobotXPostion++;
+                    xPostion++;
                     break;
                 case "south":
-                    robot.RobotYPosition--;
+                    yPostion--;
                     break;
                 case "west":
-                    robot.RobotXPostion--;
+                    xPostion--;
                     break;
 
                 default:
-                    break;
+                    throw new Exception();
             }
+
+            if (PlaceCommand.ValidateRobot(xPostion, yPostion, robot.RobotDirection))
+            {
+                robot.RobotYPosition = yPostion;
+                robot.RobotXPostion = xPostion;
+            }
+            else
+            {
+                Console.WriteLine("Cannot Move Robot Off The Table");
+            }
+
+
 
         }
 

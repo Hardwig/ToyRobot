@@ -31,6 +31,14 @@ namespace HardwigRobot
                             MoveCommand.MoveRobot(robot);
                             break;
 
+                        case "left":
+                            RotateCommand.RotateRobot(robot,"left");
+                            break;
+
+                        case "right":
+                            RotateCommand.RotateRobot(robot, "right");
+                            break;
+
                         case "report":
                             Console.WriteLine($"{robot.RobotXPostion},{robot.RobotYPosition},{robot.RobotDirection}");
                             break;
