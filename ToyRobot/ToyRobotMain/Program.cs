@@ -11,7 +11,7 @@ namespace HardwigRobot
            var robot = new RobotModel();
 
             //ROBOT START POSTION
-            Console.WriteLine("To start this robot use the PLACE Command i.e PLACE X,Y,Direction(N,E,S,W) ");
+            Console.WriteLine("To start this robot use the PLACE Command i.e PLACE X,Y,Direction(NORTH,EAST,SOUTH,WEST) ");
 
             string input;
 
