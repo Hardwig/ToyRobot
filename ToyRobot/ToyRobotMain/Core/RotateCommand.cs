@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace ToyRobotMain.Core
 {
-    public class RotateCommand
+    public static class RotateCommand
     {
         public static void RotateRobot(RobotModel robot, string command) {
 

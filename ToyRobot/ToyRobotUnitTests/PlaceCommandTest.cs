@@ -95,7 +95,6 @@ namespace ToyRobotUnitTests
             Assert.Equal(0, robot.RobotXPostion);
             Assert.Null(robot.RobotDirection);
 
-
         }
 
         [Fact]
@@ -111,7 +110,6 @@ namespace ToyRobotUnitTests
             Assert.Equal(0, robot.RobotYPosition);
             Assert.Equal(0, robot.RobotXPostion);
             Assert.Null(robot.RobotDirection);
-
 
         }
 
