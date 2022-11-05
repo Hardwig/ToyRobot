@@ -9,8 +9,6 @@ namespace ToyRobotMain.Core
             var xPostion = robot.RobotXPostion;
             var yPostion = robot.RobotYPosition;
 
-
-
             switch (robot.RobotDirection)
             {
 
@@ -40,11 +38,7 @@ namespace ToyRobotMain.Core
             {
                 Console.WriteLine("Cannot Move Robot Off The Table");
             }
-
-
-
         }
-
 
     }
 }
